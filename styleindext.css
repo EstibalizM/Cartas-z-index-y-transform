@@ -1,0 +1,274 @@
+body {
+	background-color: green;
+}
+
+.carta {
+height: 300px;
+width: 200px;
+background: white;
+border-radius: 5px;
+border: 1px solid black;
+}
+.numero {
+	font-size: 30px;
+}
+.simbolo {
+	font-size: 25px;
+
+}
+.palo {
+	font-size: 40px;
+
+}
+@keyframes carta5 { 
+	0%{ 
+		left:120px;
+		top: 120px;
+	}
+100%{
+	left:  380px;
+	top:  120px;
+    transform: rotate(10deg);}
+}
+@keyframes carta2 {
+	0% {left: 120px;
+		top: 120px;
+		}
+   100% {left: 210px;
+	     top: 120px;
+	     transform: rotate(-5deg);}
+}
+@keyframes carta7 {
+	0%{left: 120px;
+		top: 120px;}
+	100%{bottom: 1100px;
+	     left: 340px;
+	     transform: rotate(5deg);}
+}
+@keyframes carta4 {
+	0%{top: 120px;
+	   left: 120px;}
+  100%{bottom: 500px;
+	left: 300px;
+	transform: rotate(2deg);}
+}
+@keyframes carta3 {
+	0%{top: 120px;
+	   left: 120px;}
+	100% {bottom: 800px;
+	      left: 250px;
+	      transform: rotate(-2deg);}
+
+
+
+}
+#cinco_corazones
+{
+	animation-name: carta5;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	position:  absolute;
+	left:  120px;
+	top:  120px;
+	color: red;
+	
+
+}
+#numeracion5corazones_invertido {
+	transform:  rotate(180deg);
+	position:  absolute;
+	bottom:  0px;
+	right:  0px;
+}
+#cinco_corazones>#palo1 {
+	position: absolute;
+	top: 80px;
+	left: 50px;
+
+}
+#cinco_corazones>#palo2 {
+	position: absolute;
+	top: 80px;
+	left: 120px;
+}
+#cinco_corazones>#palo3 {
+	position: absolute;
+	top: 120px;
+	left: 85px;
+}
+#cinco_corazones>#palo4 {
+	position:  absolute;
+	top:  160px;
+	left:  50px;
+	transform: rotate(180deg);
+}
+#cinco_corazones>#palo5
+{
+	position:  absolute;
+	top:  160px;
+	left:  120px;
+	transform: rotate(180deg);
+}
+#dos_treboles {
+	animation-name: carta2;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+    position: absolute;
+	left: 120px;
+	top: 120px;
+	z-index: -4;
+}
+#numeracion2treboles_invertido {
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#dos_treboles>#palo1 {
+	position: absolute;
+	top: 50px;
+	left: 80px;
+}
+#dos_treboles>#palo2 {
+	position: absolute;
+	bottom: 50px;
+	left: 80px;
+	transform: rotate(180deg);
+}
+#cuatro_treboles {
+	animation-name: carta4;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	position: absolute;
+	z-index: -2;
+	top: 120px;
+	left: 120px;
+}
+#numeracion4treboles_invertido {
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: 0px;
+	right: 0px;
+}
+#cuatro_treboles>#palo1 {
+	position: absolute;
+	left: 40px;
+	top: 35px;
+}
+#cuatro_treboles>#palo2 {
+	position: absolute;
+	left: 140px;
+	top: 35px;
+}
+#cuatro_treboles>#palo3 {
+	position: absolute;
+	left: 40px;
+	top: 220px;
+	transform: rotate(180deg);
+}
+#cuatro_treboles>#palo4 {
+	position: absolute;
+	left: 140px;
+	top: 220px;
+	transform: rotate(180deg);
+}
+#tres_picas {
+	animation-name: carta3;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	position: absolute;
+	z-index: -4;
+	top: 120px;
+	left: 120px;
+}
+#numeracion3picas_invertido {
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: 0px;
+	right: 0px;
+
+}
+#tres_picas>#palo1 {
+	position: absolute;
+	left: 40px;
+
+}
+#tres_picas>#palo2 {
+	position: absolute;
+	left: 80px;
+	top: 120px;
+
+}
+#tres_picas>#palo3 {
+	position: absolute;
+	left: 130px;
+	top: 180px
+
+}
+#siete_treboles {
+	animation-name: carta7;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	position: absolute;
+	z-index: -1;
+	top: 120px;
+	left: 120px;
+}
+#numeracion7treboles_invertido {
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: 0px;
+	right: 0px;
+}
+#siete_treboles>#palo1 {
+	position: absolute;
+	left: 40px;
+	top: 50px;
+
+}
+#siete_treboles>#palo2 {
+	position: absolute;
+	left: 120px;
+	top: 50px;
+}
+#siete_treboles>#palo3 {
+	position: absolute;
+	left: 80px;
+	top: 80px;
+}
+#siete_treboles>#palo4{
+	position: absolute;
+	left: 120px;
+	top: 110px;
+}
+#siete_treboles>#palo5 {
+	position: absolute;
+	left: 40px;
+	top: 110px;
+}
+#siete_treboles>#palo6 {
+	position: absolute;
+	transform: rotate(180deg);
+	top: 200px;
+	left: 40px;
+}
+#siete_treboles>#palo7 {
+	position: absolute;
+	transform: rotate(180deg);
+	top: 200px;
+    left: 120px;
+}
+
+
+
+
+
+
+
+
+
